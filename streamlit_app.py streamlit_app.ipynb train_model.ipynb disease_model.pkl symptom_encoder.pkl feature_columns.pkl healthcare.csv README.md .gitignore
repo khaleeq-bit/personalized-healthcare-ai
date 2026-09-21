@@ -1,0 +1,9 @@
+streamlit_app.py
+streamlit_app.ipynb
+train_model.ipynb
+disease_model.pkl
+symptom_encoder.pkl
+feature_columns.pkl
+healthcare.csv
+README.md
+.gitignore

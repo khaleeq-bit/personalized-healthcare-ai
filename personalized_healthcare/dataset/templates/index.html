@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personalized Healthcare System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            🏥 HealthCare AI
+        </div>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#assessment">Assessment</a>
+    <a href="#medicine">Medicine</a>
+    <a href="#about">About</a>
+</nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tagline">AI-ASSISTED HEALTH INFORMATION</p>
+
+            <h1>
+                Personalized Healthcare
+                <span>Recommendation System</span>
+            </h1>
+
+            <p>
+                Enter your basic health information and symptoms
+                to receive an AI-assisted possible condition prediction
+                and general health information.
+            </p>
+
+            <a href="#assessment" class="hero-button">
+                Start Health Assessment
+            </a>
+
+        </div>
+        <div class="hero-stats">
+
+    <div>
+        <strong>25,000+</strong>
+        <span>Training Records</span>
+    </div>
+
+    <div>
+        <strong>30</strong>
+        <span>Condition Classes</span>
+    </div>
+
+    <div>
+        <strong>28</strong>
+        <span>Symptoms</span>
+    </div>
+
+</div>
+
+    </section>
+    <section class="how-section">
+
+    <div class="section-heading">
+
+        <p>SIMPLE PROCESS</p>
+
+        <h2>How to Use the System</h2>
+
+        <span>
+            Complete your assessment in three simple steps.
+        </span>
+
+    </div>
+
+
+    <div class="how-grid">
+
+        <div class="how-card">
+
+            <div class="how-number">1</div>
+
+            <h3>Enter Information</h3>
+
+            <p>
+                Provide your age, gender and current symptoms.
+            </p>
+
+        </div>
+
+
+        <div class="how-card">
+
+            <div class="how-number">2</div>
+
+            <h3>Analyze Symptoms</h3>
+
+            <p>
+                The machine-learning model processes the
+                information you provide.
+            </p>
+
+        </div>
+
+
+        <div class="how-card">
+
+            <div class="how-number">3</div>
+
+            <h3>View Information</h3>
+
+            <p>
+                Review the model prediction and general health
+                information provided by the system.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Assessment Section -->
+    <section class="assessment" id="assessment">
+
+        <div class="section-heading">
+            <p>HEALTH ASSESSMENT</p>
+            <h2>Tell us about your symptoms</h2>
+
+            <span>
+                Provide accurate information for the system to generate
+                a model-based prediction.
+            </span>
+        </div>
+
+
+        <div class="assessment-card">
+
+            <!-- Age -->
+            <div class="form-group">
+
+                <label for="age">
+                    Age
+                </label>
+
+                <input
+                    type="number"
+                    id="age"
+                    min="1"
+                    max="120"
+                    placeholder="Enter your age"
+                >
+
+            </div>
+
+
+            <!-- Gender -->
+            <div class="form-group">
+
+                <label for="gender">
+                    Gender
+                </label>
+
+                <select id="gender">
+
+                    <option value="">
+                        Select gender
+                    </option>
+
+                    <option value="Male">
+                        Male
+                    </option>
+
+                    <option value="Female">
+                        Female
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Symptoms -->
+            <div class="form-group">
+
+                <label>
+                    Select your symptoms
+                </label>
+
+                <p class="small-text">
+                    Select all symptoms that apply to you.
+                </p>
+
+
+                <div class="symptoms-grid">
+
+                    <label class="symptom">
+                        <input type="checkbox" value="abdominal pain">
+                        Abdominal Pain
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="anxiety">
+                        Anxiety
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="appetite loss">
+                        Appetite Loss
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="back pain">
+                        Back Pain
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="blurred vision">
+                        Blurred Vision
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="chest pain">
+                        Chest Pain
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="cough">
+                        Cough
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="depression">
+                        Depression
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="diarrhea">
+                        Diarrhea
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="dizziness">
+                        Dizziness
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="fatigue">
+                        Fatigue
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="fever">
+                        Fever
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="headache">
+                        Headache
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="insomnia">
+                        Insomnia
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="joint pain">
+                        Joint Pain
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="muscle pain">
+                        Muscle Pain
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="nausea">
+                        Nausea
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="rash">
+                        Rash
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="runny nose">
+                        Runny Nose
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="shortness of breath">
+                        Shortness of Breath
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="sneezing">
+                        Sneezing
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="sore throat">
+                        Sore Throat
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="sweating">
+                        Sweating
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="swelling">
+                        Swelling
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="tremors">
+                        Tremors
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="vomiting">
+                        Vomiting
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="weight gain">
+                        Weight Gain
+                    </label>
+
+                    <label class="symptom">
+                        <input type="checkbox" value="weight loss">
+                        Weight Loss
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Button -->
+            <button
+                type="button"
+                class="analyze-button"
+                onclick="analyzeSymptoms()"
+            >
+                🔍 Analyze Symptoms
+            </button>
+
+
+            <!-- Result -->
+            <div id="result" class="result hidden">
+
+                <p class="result-label">
+                    MODEL PREDICTION
+                </p>
+
+                <h2 id="prediction">
+                    -
+                </h2>
+
+                <p>
+                    This is an AI-generated prediction based on
+                    the information provided.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Medicine Information Section -->
+
+<section class="medicine-section" id="medicine">
+
+    <div class="section-heading">
+
+        <p>MEDICINE INFORMATION</p>
+
+        <h2>General Medicine Guidance</h2>
+
+        <span>
+            Explore general information related to commonly used medicines
+            and safety considerations.
+        </span>
+
+    </div>
+
+
+    <div class="medicine-grid">
+
+
+        <!-- Medicine Card 1 -->
+
+        <div class="medicine-card">
+
+            <div class="medicine-icon">
+                💊
+            </div>
+
+            <h3>Common Cold &amp; Fever</h3>
+
+            <p>
+                General information about medicines commonly used
+                for temporary relief from fever, cold and related symptoms.
+            </p>
+
+            <div class="medicine-info">
+
+                <strong>Examples</strong>
+
+                <span>
+                    Paracetamol and other commonly used
+                    over-the-counter medicines.
+                </span>
+
+            </div>
+
+            <div class="medicine-warning">
+                ⚠️ Use medicines only according to professional
+                medical guidance and the medicine label.
+            </div>
+
+        </div>
+
+
+        <!-- Medicine Card 2 -->
+
+        <div class="medicine-card">
+
+            <div class="medicine-icon">
+                🩺
+            </div>
+
+            <h3>Allergy Symptoms</h3>
+
+            <p>
+                General information about medicines that may be
+                used to manage common allergy symptoms.
+            </p>
+
+            <div class="medicine-info">
+
+                <strong>Examples</strong>
+
+                <span>
+                    Antihistamine medicines may be used for
+                    certain allergy symptoms.
+                </span>
+
+            </div>
+
+            <div class="medicine-warning">
+                ⚠️ Some medicines can cause drowsiness or interact
+                with other medicines.
+            </div>
+
+        </div>
+
+
+        <!-- Medicine Card 3 -->
+
+        <div class="medicine-card">
+
+            <div class="medicine-icon">
+                🛡️
+            </div>
+
+            <h3>Safety &amp; Interactions</h3>
+
+            <p>
+                Medicine safety depends on age, allergies,
+                existing conditions and other medicines being taken.
+            </p>
+
+            <div class="medicine-info">
+
+                <strong>Important</strong>
+
+                <span>
+                    Always inform your doctor or pharmacist about
+                    your existing medicines and allergies.
+                </span>
+
+            </div>
+
+            <div class="medicine-warning">
+                ⚠️ Never start or change prescription medicines
+                based only on this system.
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- Health Recommendations Section -->
+
+<section class="recommendation-section">
+
+    <div class="section-heading">
+
+        <p>HEALTH GUIDANCE</p>
+
+        <h2>Recommended Next Steps</h2>
+
+        <span>
+            General health guidance that can help users decide
+            what to do after receiving a model-based prediction.
+        </span>
+
+    </div>
+
+
+    <div class="recommendation-grid">
+
+
+        <div class="recommendation-card">
+
+            <span class="recommendation-number">
+                01
+            </span>
+
+            <h3>Review Your Symptoms</h3>
+
+            <p>
+                Carefully review the symptoms entered into the system
+                and check whether the information is accurate.
+            </p>
+
+        </div>
+
+
+        <div class="recommendation-card">
+
+            <span class="recommendation-number">
+                02
+            </span>
+
+            <h3>Consult a Professional</h3>
+
+            <p>
+                Discuss persistent, severe or concerning symptoms
+                with a qualified healthcare professional.
+            </p>
+
+        </div>
+
+
+        <div class="recommendation-card">
+
+            <span class="recommendation-number">
+                03
+            </span>
+
+            <h3>Keep Health Records</h3>
+
+            <p>
+                Maintain records of previous symptoms, medicines,
+                allergies and relevant medical information.
+            </p>
+
+        </div>
+
+
+        <div class="recommendation-card">
+
+            <span class="recommendation-number">
+                04
+            </span>
+
+            <h3>Emergency Symptoms</h3>
+
+            <p>
+                Seek urgent medical care for serious symptoms such as
+                severe breathing difficulty, loss of consciousness
+                or severe chest pain.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- About Section -->
+
+<section class="about-section" id="about">
+
+    <div class="section-heading">
+
+        <p>ABOUT THE SYSTEM</p>
+
+        <h2>How Personalized Healthcare AI Works</h2>
+
+        <span>
+            A machine-learning based healthcare information system
+            designed for educational and demonstration purposes.
+        </span>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <div class="about-text">
+
+            <h3>Personalized Healthcare &amp; Medicine Recommendation System</h3>
+
+            <p>
+                This project combines machine learning and web technologies
+                to analyze user-provided health information and symptoms.
+                The system generates a model-based possible condition
+                prediction and provides general health and medicine information.
+            </p>
+
+            <p>
+                The application is designed to demonstrate how artificial
+                intelligence can be integrated into healthcare information
+                systems while keeping medical decisions under the guidance
+                of qualified healthcare professionals.
+            </p>
+
+        </div>
+
+
+        <div class="technology-card">
+
+            <h3>Technology Stack</h3>
+
+            <div class="technology-list">
+
+                <span>🐍 Python</span>
+                <span>📊 Pandas</span>
+                <span>🤖 Scikit-learn</span>
+                <span>🌐 Flask</span>
+                <span>🎨 HTML &amp; CSS</span>
+                <span>⚡ JavaScript</span>
+                <span>🗃️ Dataset</span>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Health History Section -->
+
+<section class="history-section" id="history">
+
+    <div class="section-heading">
+
+        <p>HEALTH HISTORY</p>
+
+        <h2>Assessment Records</h2>
+
+        <span>
+            Review previous health assessments and model-generated
+            predictions in one place.
+        </span>
+
+    </div>
+
+
+    <div class="history-card">
+
+        <div class="history-header">
+
+            <div>
+                <h3>Recent Assessments</h3>
+                <p>Your recent health assessment activity</p>
+            </div>
+
+            <button class="clear-button" type="button">
+                Clear History
+            </button>
+
+        </div>
+
+
+        <div class="history-empty">
+
+            <div class="history-icon">
+                📋
+            </div>
+
+            <h3>No Assessment History</h3>
+
+            <p>
+                Your completed assessments will appear here.
+            </p>
+
+            <a href="#assessment" class="history-button">
+                Start Assessment
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Workflow -->
+
+    <div class="workflow">
+
+        <h3>System Workflow</h3>
+
+        <div class="workflow-grid">
+
+            <div class="workflow-step">
+
+                <div class="step-number">01</div>
+
+                <h4>User Input</h4>
+
+                <p>
+                    User provides age, gender and symptoms.
+                </p>
+
+            </div>
+
+
+            <div class="workflow-arrow">→</div>
+
+
+            <div class="workflow-step">
+
+                <div class="step-number">02</div>
+
+                <h4>Data Processing</h4>
+
+                <p>
+                    Symptoms are converted into machine-readable features.
+                </p>
+
+            </div>
+
+
+            <div class="workflow-arrow">→</div>
+
+
+            <div class="workflow-step">
+
+                <div class="step-number">03</div>
+
+                <h4>ML Model</h4>
+
+                <p>
+                    The trained Naive Bayes model processes the input.
+                </p>
+
+            </div>
+
+
+            <div class="workflow-arrow">→</div>
+
+
+            <div class="workflow-step">
+
+                <div class="step-number">04</div>
+
+                <h4>Prediction</h4>
+
+                <p>
+                    The system displays a model-based possible condition.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Disclaimer -->
+    <section class="disclaimer">
+
+        <h3>⚠️ Important Medical Disclaimer</h3>
+
+        <p>
+            This system is developed for educational and demonstration
+            purposes only. The prediction generated by the machine
+            learning model is not a medical diagnosis and should not
+            replace professional medical advice. Do not start, stop,
+            or change medication based on this system. Consult a
+            qualified healthcare professional for medical decisions.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Personalized Healthcare &amp; Medicine
+            Recommendation System
+        </p>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
